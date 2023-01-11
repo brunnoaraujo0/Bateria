@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #1a1a1a;
+    font-family: 'Montserrat', Helvetica, sans-serif;
+}
+.logo {
+    width: 200px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    color: #FFF;
+    margin-bottom: 20px;
+}
+.keys {
+    background-color: #0d0d0d;
+    padding: 1.8rem;
+    border-radius: 1.2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.key {
+    width: 90px;
+    height: 90px;
+    border: 2px solid #FFF;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 1rem;
+}
+.key.w.active, 
+.key.q.active,
+.key.e.active,
+.key.a.active,
+.key.s.active,
+.key.d.active,
+.key.z.active,
+.key.x.active,
+.key.c.active {
+    border: 3px solid rgb(255, 255, 255);
+    color: rgb(36, 36, 36);
+    background-color: #FFF;
+}
+.key.q {
+    border: 3px solid rgb(0, 251, 255);
+    color: rgb(0, 251, 255);
+}
+.key.w {
+    border: 3px solid rgb(242, 255, 0);
+    color: rgb(242, 255, 0);
+}
+.key.e {
+    border: 3px solid rgb(0, 17, 255);
+    color: rgb(0, 17, 255);
+}
+.key.a {
+    border: 3px solid rgb(255, 0, 0);
+    color:rgb(255, 0, 0);
+}
+.key.s {
+    border: 3px solid rgb(255, 0, 230);
+    color: rgb(255, 0, 230);
+}
+.key.d {
+    border: 3px solid rgb(255, 153, 0);
+    color:rgb(255, 153, 0);
+}
+.key.z {
+    border: 3px solid rgb(126, 219, 169);
+    color: rgb(126, 219, 169);
+}
+.key.x {
+    border: 3px solid rgb(101, 2, 195);
+    color:rgb(101, 2, 195);
+}
+.key.c {
+    border: 3px solid rgb(0, 255, 21);
+    color: rgb(0, 255, 21);
+}
+.composer {
+    width: 260px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.composer #input {
+    width: 340px;
+    outline: none;
+    font-size: 17px;
+    padding: 10px 15px;
+    background-color: #0d0d0d;
+    border: none;
+    border-radius: 1rem;
+    height: 50px;
+    color: #8d8d8d;
+}
+.composer button {
+    width: 70%;
+    height: 40px;
+    background: none;
+    border: none;
+    color: #1a1a1a;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #83b300;
+    border-radius: 2rem;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.composer button:hover {
+    background-color: #577602;
+}
+
+footer img{
+    width: 150px;
+    margin-top: 30px;
+}
