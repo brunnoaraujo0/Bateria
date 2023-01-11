@@ -1,6 +1,12 @@
 document.body.addEventListener('keyup', (event)=>{ //EVENTO DE QUANDO CLICAR EM ALGUMA LETRA
     playSound( event.code.toLowerCase() ); //DISPARE ESSA FUNCAO EM QUE RECEBE COMO PARAMETRO QUAL LETRA TOCOU
 });
+document.body.addEventListener('click', (event)=>{ //EVENTO DE QUANDO CLICAR EM ALGUMA LETRA
+   let letra = event.target.getAttribute('data-key'); //pegue o valor que foi clicado
+    playSound(letra);
+});
+
+
 
 document.querySelector('.composer button').addEventListener('click', () => { // EVENTO DE CLICK DO BOTAO TOCAR 
     let song = document.querySelector('#input').value; //PEGUE QUAL A SEQUENCIA QUE FOI DIGITADA
